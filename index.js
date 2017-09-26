@@ -1,4 +1,4 @@
-//openung script run on page load
+//opening script run on page load
 window.onload = function hello() {
   //typed.js script
   var typed = new Typed('#hello', {
