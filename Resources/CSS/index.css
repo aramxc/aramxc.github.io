@@ -4,6 +4,8 @@ body {
   font-family: 'Roboto', sans-serif;
   font-size: 1.3em;
   overflow: hidden;
+  background: url('')
+  repeat-x;
 }
 
 
@@ -12,7 +14,9 @@ body {
 
 #header {
   height: 6vh;
-
+  display: flex;
+  justify-content: center;
+  
 
 }
 
