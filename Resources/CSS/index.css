@@ -26,7 +26,7 @@ body {
 }
 
 #main_nav a {
-
+  color: black;
   text-decoration: none;
 }
 
@@ -60,9 +60,30 @@ body {
 #main-landing {
   height: 82vh;
   width: 100%;
-  display: flex;
+  display: inline-flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+#hello-content {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: 3em;
+
+}
+
+/* Cursor */
+.typed-cursor {
+  font-size: 2.2em;
+
+
+}
+
+#main-content {
+
+
 }
 
 /* FOOTER ----------------------------------------*/
