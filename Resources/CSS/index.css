@@ -8,6 +8,13 @@ body {
   repeat-x;
 }
 
+.container {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+}
+
 
 
 /* HEADER AND NAV ------------------------------*/
@@ -16,7 +23,7 @@ body {
   height: 6vh;
   display: flex;
   justify-content: center;
-  
+
 
 }
 
