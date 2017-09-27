@@ -1,35 +1,46 @@
+html{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
 /* MAIN BODY ---------------------------------------*/
+
 body {
+  width: 100%;
   text-align: center;
   font-family: 'Roboto', sans-serif;
-  font-size: 1.3em;
+  font-size: 1.4em;
   overflow: hidden;
-  background: url('')
-  repeat-x;
+  background: url('/Resources/Images/longs-skyline.jpg') no-repeat bottom;
+  b-webkit-background-size:   contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+  background-color: #F3EFE7;
 }
 
 .container {
   display: inline-flex;
   flex-direction: column;
-  justify-content: flex-start;
+  width: 100%;
+
 
 }
-
 
 
 /* HEADER AND NAV ------------------------------*/
 
 #header {
   height: 6vh;
+  width: 100%;
   display: flex;
   justify-content: center;
-
-
 }
 
 #header li {
   display: inline-flex;
-  padding: 0 20px;
+  padding: 0 2em;
 }
 
 #main_nav {
@@ -44,27 +55,29 @@ body {
 #main_nav a:visited {
   text-decoration: none;
   color: black;
-
 }
 
 .sliding-middle-out {
-	display: inline-block;
-	position: relative;
-	padding-bottom: 3px;
+  display: inline-block;
+  position: relative;
+  padding-bottom: 0.5em;
 }
+
 .sliding-middle-out:after {
-	content: '';
-	display: block;
-	margin: auto;
-	height: 2px;
-	width: 0px;
-	background: transparent;
-	transition: width .5s ease, background-color .5s ease;
+  content: '';
+  display: block;
+  margin: auto;
+  height: 0.15em;
+  width: 0px;
+  background: transparent;
+  transition: width .5s ease, background-color .5s ease;
 }
+
 .sliding-middle-out:hover:after {
-	width: 100%;
-	background: #0C85AC;
+  width: 100%;
+  background: #FF8329;
 }
+
 
 /* LANDING PAGE ------------------------------*/
 
@@ -84,16 +97,20 @@ body {
   height: 3em;
 
 }
+#main-content p {
+  color: #A8A7A6;
+
+}
 
 #main-content-links a {
   text-decoration: none;
-  color: #0C85AC;
+  color: #FF8329;
 
 }
 
 #main-content-links a:visited {
   text-decoration: none;
-  color: #0C85AC;
+  color: #FF8329;
 
 }
 
@@ -110,36 +127,39 @@ body {
 
 }
 
+
 /* FOOTER ----------------------------------------*/
 
-#footer {
-  margin-left: 0;
-  height: 8vh;
-  width: 100%;
-  margin: 0;
-  justify-content: center;
-  align-items: center;
 
+#footer {
+  margin-left: 0px;
+  height: 12vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  color: #A8A7A6;
 
 }
 
 #footer a {
   text-decoration: none;
-  color: #0C85AC;
-
+  color:#FF8329;
 }
 
 #footer a:visited {
   text-decoration: none;
-  color: #0C85AC;
-
+  color: #FF8329;
 }
 
+
 /* ICONS ----------------------------------------*/
+
+
 /* Icons from iconmonstr.com */
 
 .icon {
-  height : 0.8em;
+  height: 0.8em;
   display: inline;
   align-items: center;
   justify-content: center;
