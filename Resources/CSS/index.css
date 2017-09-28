@@ -156,41 +156,35 @@ body {
 }
 
 /* OVERLAY--------------------------------------*/
-.modal {
-    display: none; /* Hidden by default */
-    justify-content: center;
-    align-items: center;
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    padding: 2em;
-    background-color:  rgba(0,0,0,0.25);
-
+#contact-modal {
+  display: none;
+  position: fixed;
+  z-index: 5;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
 }
-
-#contact-content {
-  background-color: #fefefe;
-  margin: 15% auto; /* 15% from the top and centered */
+.contact-content {
+  background-color: darkgray;
+  margin: 20% auto;
   padding: 20px;
-  border: 1px solid #888;
-  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.6);
-  width: 60%; /* Could be more or less, depending on screen size */
-
+  width: 70%;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.5);
 }
 
+#closebtn {
+  float: right;
+  color: #ccc;
+  font-size: 2em;
+}
 
-/* The Close Button */
-.close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
+#closebtn:hover, #closebtn:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 /* ICONS ----------------------------------------*/

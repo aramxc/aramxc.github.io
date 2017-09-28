@@ -1,3 +1,5 @@
+/* LANDING PAGE SCRIPTS HERE */
+
 //opening script run on page load
 window.onload = function hello() {
   //typed.js script
@@ -7,33 +9,37 @@ window.onload = function hello() {
     fadeOut: true,
     fadeOutClass: 'typed-fade-out',
     fadeOutDelay: 200,
-
   });
 };
 
-/*
-function openModal() {
-  var openContactLink = getElementById('contactLink');
-  openContactLink.onclick = function () {
-    //get modal element
-    var modal = getElementByClass('modal');
+/* MODAL VARIABLES AND FUNCTIONS HERE */
 
-    //set modal display to flex to show content
-    modal.style.display = 'flex';
-  };
+//get modal elements
+var contactModal = document.getElementById('contact-modal');
+
+//get modal Buttons
+var contactModalBtn = document.getElementById('contactModalBtn');
+
+//get close Button
+var closebtn = document.getElementById('closebtn');
+
+//functions to open modals
+contactModalBtn.onclick =  function openModal() {
+
+  contactModal.style.display = 'block';
+
 };
 
-window.onload = function () {
-  var closeButton = getElementById('close');
+//function to close modal
+closebtn.onclick =  function closeModal() {
 
-  closeButton.onclick = function closeModal() {
+  contactModal.style.display = 'none';
 
-    //get modal element
-    var modal = getElementByClass('modal');
-
-    //set modal display to none
-    modal.style.display = 'none';
-
-  };
 };
-*/
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function (event) {
+    if (event.target == contactModal) {
+      contactModal.style.display = 'none';
+    }
+  };
