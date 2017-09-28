@@ -11,28 +11,29 @@ window.onload = function hello() {
   });
 };
 
-// Get contact overlay
-var contactModal = getElementById('contact-overlay');
+/*
+function openModal() {
+  var openContactLink = getElementById('contactLink');
+  openContactLink.onclick = function () {
+    //get modal element
+    var modal = getElementByClass('modal');
 
-//Get contact overlay link
-var contactLink = getElementById('overlayLink');
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName('close')[0];
-
-// When the user clicks on the link, open the modal
-function openContactForm() {
-  contactModal.style.display = 'block';
-}
-
-// When the user clicks on <span> (x), close the modal
-function closeModal() {
-  contactModal.style.display = 'none';
-  }
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function (event) {
-    if (event.target == modal) {
-      contactModal.style.display = 'none';
-    }
+    //set modal display to flex to show content
+    modal.style.display = 'flex';
   };
+};
+
+window.onload = function () {
+  var closeButton = getElementById('close');
+
+  closeButton.onclick = function closeModal() {
+
+    //get modal element
+    var modal = getElementByClass('modal');
+
+    //set modal display to none
+    modal.style.display = 'none';
+
+  };
+};
+*/
