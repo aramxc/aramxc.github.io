@@ -3,4 +3,9 @@ My personal portfolio site hosted on Github Pages.
 
 The goal of this site is to showcase my previous work, along with my current skills. I aimed to make my portfolio as lightweight as possible, with minimal javascript.
 
+# TODO:
+Add modal transitions using vanilla javascript.
+
+Add content to about me and projects page.
+
 Code Licensed Under GPL v3.0 | Content Under CC BY 3.0
