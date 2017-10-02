@@ -13,11 +13,9 @@ body {
   font-family: 'Roboto', sans-serif;
   font-size: 1.4em;
   overflow: hidden;
-
 }
 
 .blue-theme {
-
   color: #ffdea7;
   background: url('/Resources/Images/longs-blue.jpg') no-repeat bottom;
   b-webkit-background-size: contain;
@@ -35,8 +33,6 @@ body {
   -o-background-size: contain;
   background-size: contain;
   background-color: #F3EFE7;
-
-
 }
 
 .main-wrapper {
@@ -117,7 +113,6 @@ body {
 
 #hello-content h1 {
   color: black;
-
 }
 
 #main-content p {
@@ -154,23 +149,32 @@ body {
   color: black;
 }
 
-
 /* PROJECTS -------------------------------------*/
-
-#projects-container{
+#projects-container {
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-
 }
-#projects-flexbox{
+#projects-flexbox {
   display: inline-flex;
   width: 100%;
 }
-
 #project-items {
   margin: 0 2em;
+}
+
+/* ABOUT -------------------------------------*/
+#about-container {
+  height: 100%;
+  display: inline-flex;
+  justify-content: space-around;
+}
+
+.round-image {
+  height: 15em;
+  width: auto;
+  border-radius: 50%;
 
 }
 
@@ -210,9 +214,7 @@ body {
   width: 100%;
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.6);
-
 }
-
 .modal-dialog {
   background-color: #F3EFE7;
   margin: 10% auto;
@@ -220,32 +222,25 @@ body {
   width: 70%;
   height: 60%;
   max-height: 60%;
-  box-shadow: 0 7px 10px 0 rgba(0, 0, 0, 0.5),  0 5px 8px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 0 7px 10px 0 rgba(0, 0, 0, 0.5), 0 5px 8px 0 rgba(0, 0, 0, 0.5);
   color: #5a6175;
   -webkit-border-radius: 15px !important;
-    -moz-border-radius: 15px !important;
-    border-radius: 15px !important;
-
-
+  -moz-border-radius: 15px !important;
+  border-radius: 15px !important;
 }
-
 .tan-modal-theme {
   color: #5a6175;
   background-color: #F3EFE7;
 }
-
 .blue-modal-theme {
   color: #ffdea7;
   background-color: #64A4D9;
-
 }
-
 .closebtn {
   float: right;
   color: #5a6175;
   font-size: 2em;
 }
-
 .closebtn:hover, .closebtn:focus {
   color: black;
   text-decoration: none;
@@ -253,7 +248,6 @@ body {
 }
 
 /* CONTACT MODAL-------------------------------*/
-
 
 /* ICONS ----------------------------------------*/
 

@@ -1,6 +1,3 @@
-/* LANDING PAGE SCRIPTS HERE */
-
-//opening script run on page load
 window.onload = function hello() {
   //typed.js script
   var typed = new Typed('#hello', {
@@ -34,7 +31,7 @@ contactClose.onclick = function closeContactModal() {
 };
 
 // When the user clicks anywhere outside of the modal, close it
-window.onclick = function (event) {
+window.onclick = function(event) {
   if (event.target == contactModal) {
     contactModal.style.display = 'none';
   }
