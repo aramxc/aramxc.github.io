@@ -149,6 +149,11 @@ body {
   color: black;
 }
 
+hr {
+
+
+}
+
 /* PROJECTS -------------------------------------*/
 #projects-container {
   height: 100%;
@@ -170,6 +175,21 @@ body {
   display: inline-flex;
   justify-content: space-around;
 }
+
+#quote {
+  max-width: 60%;
+}
+
+#quote h3 {
+  text-align: right;
+  margin-right: 20%;
+}
+
+#about-content {
+  max-width: 50%;
+  margin: 0 3em;
+}
+
 
 .round-image {
   height: 15em;
