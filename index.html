@@ -8,52 +8,81 @@
   <meta name="description" content="Aaron Ramirez is a freelance web developer based in Colorado with professional experience designing and developing responsive websites for outdoor-oriented clients." />
   <meta name="keywords" content="web design, web development, responsive design, outdoor websites, colorado web design, colorado web developer" />
   <title>Aaron Ramirez - Colorado-Based Freelance Web Developer </title>
-
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
   <link rel="stylesheet" href="Resources/CSS/index.css" />
+  <script src="https://use.fontawesome.com/3a840d71e6.js"></script>
 </head>
 
-<body class="tan-theme">
+<body>
   <!--MAIN WRAPPER-->
   <div class="main-wrapper">
-    <!-- HEADER -->
-    <div id="header">
-      <!--NAV-->
-      <ul id="main_nav">
-        <li><a href="#" class="sliding-middle-out">Home</a></li>
-        <li><a href="about.html" class="sliding-middle-out">About</a></li>
-        <li><a href="projects.html" class="sliding-middle-out">Projects</a></li>
-        <li><a href="#" id="contactModalBtn" class="sliding-middle-out">Contact</a></li>
+    <!--HEADER-->
+    <header class="header">
+
+      <h1 class="header-title">Aaron Ramirez</h1>
+
+    </header>
+    <!--NAV DRAWER-->
+    <div class="nav-drawer">
+      <ul class="menu-list">
+        <li class="menu-item"><button class="modalButton tablink" onclick="openModal(event, 'about')">About</button></li>
+        <li class="menu-item"><button class="modalButton tablink" onclick="openModal(event, 'projects')">Projects</button></li>
+        <li class="menu-item"><button class="modalButton tablink" onclick="openModal(event, 'contact')">Contact</button></li>
       </ul>
     </div>
     <!--MAIN LANDING PAGE -->
-    <div id="main-landing">
-      <div id="content-flexbox">
-        <div id="hello-content">
-          <div id="hello"></div>
-        </div>
-        <div id="main-content">
-          <p> I design and build full-scale web applications.</p>
-          <div id="main-content-links">
-            <a href="https://github.com/aramxc" target="_blank">See what I'm working on
+    <div class="container">
+      <div id="main-landing">
+        <div id="content-flexbox">
+          <div id="hello-content">
+            <div id="hello"></div>
+          </div>
+          <div id="main-content">
+            <p> I design and build full-scale web applications.</p>
+            <div id="main-content-links">
+              <a href="https://github.com/aramxc" target="_blank">See what I'm working on
           <img class = "icon" src="Resources\Images\open-in-new.svg"  alt="open in new tab"></a>
+            </div>
           </div>
         </div>
       </div>
+      <!--SUBFOOTER-->
+      <div class="subfooter">
+        <hr class="hr-medium">
+      </div>
+      <!--FOOTER-->
+      <div class="footer">
+        <h6>Hand-crafted by <a href = "http://aramxc.github.io" target="_blank">Aaron Ramirez</a> &copy 2017.</h6>
+      </div>
     </div>
-    <!--FOOTER-->
-    <div id="footer">
-      <h6>Hand-crafted by <a href = "http://aramxc.github.io" target="_blank">Aaron Ramirez</a> &copy 2017.</h6>
-    </div>
+  </div>
   </div>
   <!--MODAL WRAPPER -->
   <div id="modal-wrapper">
+    <!--ABOUT OVERLAY -->
+    <div id="about" class="modal" role="dialog">
+      <div class="modal-dialog">
+        <span onclick="about.style.display='none'" class="closebtn">&times</span>
+        <div class="container">
+          <h1>About</h1>
+        </div>
+      </div>
+    </div>
+    <!--PROJECTS OVERLAY -->
+    <div id="projects" class="modal" role="dialog">
+      <div class="modal-dialog">
+        <span onclick="projects.style.display='none'" class="closebtn">&times</span>
+        <div class="container">
+          <h1>Projects</h1>
+        </div>
+      </div>
+    </div>
     <!--CONTACT OVERLAY-->
-    <div id="contact-modal" class="modal" role="dialog">
-      <div class="modal-dialog blue-modal-theme">
-        <span id="contactClose" class="closebtn">&times</span>
+    <div id="contact" class="modal" role="dialog">
+      <div class="modal-dialog">
+        <span onclick="contact.style.display='none'" class="closebtn">&times</span>
         <h1>Let's get in touch.</h1>
-        <div id="container">
+        <div class="container">
           <form class="" action="[INSERTACTIONHERE]" method="post">
             <div id="toprow">
               <input type="text" name="name" placeholder="Name*" required>
@@ -68,14 +97,14 @@
             </div>
             <input type="submit" name="" value="Submit">
           </form>
+          <p>* Required</p>
         </div>
-        <p>* Required</p>
       </div>
     </div>
   </div>
 </body>
 <!--SCRIPTS-->
-<script type="text/javascript" src="index.js"></script>
+<script type="text/javascript" src="main.js"></script>
 <script type="text/javascript" src="typed.js"></script>
 
 </html>
