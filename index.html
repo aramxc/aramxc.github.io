@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="Resources\Images\ar-logo.png">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="description" content="Aaron Ramirez is a freelance web developer based in Colorado with professional experience designing and developing responsive websites for outdoor-oriented clients." />
   <meta name="keywords" content="web design, web development, responsive design, outdoor websites, colorado web design, colorado web developer" />
@@ -19,7 +20,7 @@
     <!--HEADER-->
     <header class="header">
 
-      <h1 class="header-title">Aaron Ramirez</h1>
+      <h1 class="header-title"><img src="Resources\Images\ar-logo.png" alt="Aaron Ramirez" class = "logo"></h1>
 
     </header>
     <!--NAV DRAWER-->
@@ -63,41 +64,51 @@
     <div id="about" class="modal" role="dialog">
       <div class="modal-dialog">
         <span onclick="about.style.display='none'" class="closebtn">&times</span>
-        <div class="container">
-          <h1>About</h1>
-        </div>
+        <div class="modal-container">
+          <br><img src="Resources\Images\ar-logo.png" alt="Aaron Ramirez" class = "logo"><br>
+        <h1>Web Application Development</h1>
+        <p>Based in Colorado, USA.</p>
+        <p>Experience in all phases of design and development.</p>
       </div>
+</div>
     </div>
     <!--PROJECTS OVERLAY -->
     <div id="projects" class="modal" role="dialog">
       <div class="modal-dialog">
         <span onclick="projects.style.display='none'" class="closebtn">&times</span>
-        <div class="container">
-          <h1>Projects</h1>
-        </div>
+        <div class="modal-container">
+        <br><img src="Resources\Images\ar-logo.png" alt="Aaron Ramirez" class = "logo"><br>
+        <h1>Projects</h1>
+      </div>
       </div>
     </div>
+
     <!--CONTACT OVERLAY-->
     <div id="contact" class="modal" role="dialog">
       <div class="modal-dialog">
         <span onclick="contact.style.display='none'" class="closebtn">&times</span>
-        <h1>Let's get in touch.</h1>
-        <div class="container">
-          <form class="" action="[INSERTACTIONHERE]" method="post">
-            <div id="toprow">
-              <input type="text" name="name" placeholder="Name*" required>
-              <input type="text" name="email" placeholder="Email Address*" required>
-            </div>
-            <div id="middlerow">
-              <input type="text" name="phonenumber" placeholder="Phone Number">
-              <input type="text" name="website" placeholder="Website or Company">
-            </div>
-            <div id="bottomrow">
-              <input type="text" name="" value="" placeholder="Let's collaborate! *" required>
-            </div>
-            <input type="submit" name="" value="Submit">
-          </form>
-          <p>* Required</p>
+
+        <div class="modal-container">
+          <br><img src="Resources\Images\ar-logo.png" alt="Aaron Ramirez" class = "logo"><br>
+          <div class="form-container">
+            <h1>Let's get in touch.</h1>
+            <p>Introduce yourself and tell me about your project. I'll get in touch and arrange a time to discuss your ideas further. I typically respond within a day or two.</p>
+            <form class="" action="https://formspree.io/aramxc@gmail.com" method="POST">
+              <div class="form-row">
+                <input type="text" name="name" placeholder="Name*" required>
+                <input type="text" name="email" placeholder="Email Address*" required>
+              </div>
+              <div class="form-row">
+                <input type="text" name="phonenumber" placeholder="Phone Number">
+                <input type="text" name="website" placeholder="Website or Company">
+              </div>
+              <div id="bottomrow">
+                <textarea id="Message" name="message" placeholder="What's your project about? How can I help? *" height="50em" required=""></textarea>
+              </div>
+              <input class="orangebtn" type="submit" name="" value="Submit">
+            </form>
+            <p>* Required</p>
+          </div>
         </div>
       </div>
     </div>
