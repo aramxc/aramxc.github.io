@@ -454,6 +454,11 @@ form .row:first-child .floating-label-form-group {
   border-top: 1px solid #eeeeee;
 }
 
+form p {
+  opacity: 0.7;
+  font-size: 1em;
+}
+
 footer {
   color: white;
 }
