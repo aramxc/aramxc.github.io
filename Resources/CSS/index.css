@@ -226,6 +226,20 @@ header.masthead img {
 
 }
 
+.intro-hire .nav-link,  .intro-hire .nav-link:visited {
+  color: white;
+  opacity: 0.75
+}
+
+.intro-hire .nav-link:hover {
+  opacity: 1;
+
+}
+
+.intro-hire p{
+  margin-bottom: 0;
+}
+
 header.masthead .intro-text .name {
   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 2em;
