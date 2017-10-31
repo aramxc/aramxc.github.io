@@ -22,6 +22,26 @@ a, a.active, a:active, a:focus, a:hover {
   outline: none;
 }
 
+p .a-dark {
+text-decoration: underline;
+  color: white;
+}
+
+p .a-dark:visited {
+text-decoration: underline;
+  color: white;
+}
+
+.container {
+  text-align: center;
+}
+.roundedImg {
+  border-radius: 5%;
+  margin-bottom: 10px;
+
+}
+
+
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 700;
